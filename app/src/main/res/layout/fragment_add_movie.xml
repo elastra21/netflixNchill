@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="MovieModel"
+            type="com.example.movies_n_chill.MovieViewModel" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:id="@+id/content"
+    tools:context=".add_movie">
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/imdbCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="IMDB Code"
+        android:inputType="textPersonName"
+        android:text="" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Movie Title"
+        android:inputType="none"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:text="@={MovieModel.inputTitle}"
+        android:id="@+id/title_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Movie Image"
+
+        android:layout_marginBottom="5dp"
+        android:text="@={MovieModel.inputImage}"
+        android:ems="10"
+        android:inputType="none"
+        android:id="@+id/image_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={MovieModel.inputDescription}"
+        android:hint="Movie Description"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="none"
+        android:id="@+id/description_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

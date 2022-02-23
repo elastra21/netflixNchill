@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+<item
+    android:checked="true"
+    android:id="@+id/nav_library"
+    android:icon="@drawable/ic_baseline_local_movies_24"
+    android:title="Library"/>
+    <item
+        android:id="@+id/nav_watched"
+        android:icon="@drawable/ic_baseline_remove_red_eye_24"
+        android:title="Watched Movies"/>
+    <item
+        android:id="@+id/nav_watchlist"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="Watchlist"/>
+    </group>
+</menu>
